@@ -26,8 +26,7 @@ namespace EjemploPOO
 
         public void Work()
         {
-            Console.WriteLine("Soy la empresa " + this.name + " y estoy trabajando");
-            sendWorkersToWork();
+            Work(8);
         }
 
         public void Work(int hours)
