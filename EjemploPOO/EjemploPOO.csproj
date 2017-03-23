@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Attendance.cs" />
     <Compile Include="Company.cs" />
+    <Compile Include="IWorkable.cs" />
+    <Compile Include="Machine.cs" />
     <Compile Include="ModernSupervisor.cs" />
     <Compile Include="OldFashionedSupervisor.cs" />
     <Compile Include="Program.cs" />

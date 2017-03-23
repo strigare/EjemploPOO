@@ -10,7 +10,7 @@ namespace EjemploPOO
     {
         static void Main(string[] args)
         {
-            List<Worker> workers = new List<Worker>();
+            List<IWorkable> workers = new List<IWorkable>();
 
             Worker ignacio = new Worker("Ignacio", 10000);
             workers.Add(ignacio);
@@ -25,10 +25,13 @@ namespace EjemploPOO
             tomas.addSupervisedWorker(jose);
             workers.Add(tomas);
 
+            Machine miMaquina = new Machine();
+            workers.Add(miMaquina);
+
             Company magnet = new Company("Magnet", workers);
 
             magnet.Work();
-            magnet.Work(4);
+            //magnet.Work(4);
 
             Console.ReadLine();
         }

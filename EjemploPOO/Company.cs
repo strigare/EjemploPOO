@@ -9,10 +9,10 @@ namespace EjemploPOO
     class Company
     {
         private String name;
-        private List<Worker> workers;
+        private List<IWorkable> workers;
         private Attendance attendance = new Attendance();
 
-        public Company(String name, List<Worker> workers)
+        public Company(String name, List<IWorkable> workers)
         {
             this.name = name;
             this.workers = workers;
@@ -21,7 +21,7 @@ namespace EjemploPOO
         public Company()
         {
             this.name = "Nombre Generico";
-            workers = new List<Worker>();
+            workers = new List<IWorkable>();
         }
 
         public void Work()
@@ -38,10 +38,10 @@ namespace EjemploPOO
 
         private void sendWorkersToWork()
         {
-            foreach (Worker worker in workers)
+            foreach (IWorkable worker in workers)
             {
                 worker.Work();
-                attendance.addWorkDay(worker);
+                //attendance.addWorkDay(worker);
             }
         }
     }

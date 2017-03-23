@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace EjemploPOO
 {
-    class Worker
+    class Worker : IWorkable
     {
-        private String name;
-        private String surname;
+        private string name;
         private int salary;
 
         public Worker(String name, int salary)
@@ -20,7 +19,7 @@ namespace EjemploPOO
 
         public String getName()
         {
-            return name + " " + surname;
+            return name;
         }
 
         public void setName(String name)
