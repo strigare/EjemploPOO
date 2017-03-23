@@ -1,6 +1,6 @@
 # EjemploPOO
 
-Se tiene una empresa la cuál tiene trabajadores y supervisores. La fábrica debe poder empezar a trabajar, lo que implica que todos sus trabajadores también lo harán. Los trabajadores deben imprimir un mensaje a consola indicando que están trabjando, los supervisores, por otro lado, deben indicar en consola que están trabajando y además indicar a quienes supervisan.
+Se tiene una empresa la cuál tiene trabajadores y supervisores. La fábrica debe poder empezar a trabajar, lo que implica que todos sus trabajadores también lo harán. Los trabajadores deben imprimir un mensaje a consola indicando que están trabjando, los supervisores, por otro lado, deben indicar en consola que están trabajando y además indicar a quienes supervisan. Los supervisores pueden ser modernos o anticuados, los modernos escriben sus reportes en computador (indicandolo en pantalla) y los anticuados en papel. 
 
 Además, cada vez que un trabajador trabaja, debe llevarse registro de esto. 
 
