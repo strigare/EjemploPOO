@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EjemploPOO
 {
-    class Supervisor : Worker
+    abstract class Supervisor : Worker
     {
         private List<Worker> supervisedWorkers = new List<Worker>();
 
@@ -27,6 +27,10 @@ namespace EjemploPOO
             {
                 Console.WriteLine("\t\tSuperviso como trabaja " + worker.getName() + " y tomo cafe");
             }
+
+            FileReport();
         }
+
+        public abstract void FileReport();
     }
 }
